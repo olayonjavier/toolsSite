@@ -5,6 +5,11 @@
         <title>Tools | Javier Olayon</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/superhero/bootstrap.min.css" integrity="sha384-rvwYMW9Z/bbxZfgxHQEKx6D91KwffWAG+XnsoYNCGWi/qL1P9dIVYm1HBiHFqQEt" crossorigin="anonymous">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <style>
+            .hide {
+                display: none;
+            }
+        </style>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -54,75 +59,54 @@
                     </div>
                 </div>
             </div>
-
-
-
           </nav>
 
-<main class="py-4">
-    <div class="container-fluid">
-            <div class="page-header">
-<h1>Welcome to Tools | Javier Olayon</h1>
-</div>
-
-<p>
-Welcome to my collection of webpage tools. These tools are fan made.
-</p>
-
-<div class="row">
-<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-    <div class="card border-info">
-        <h4 class="card-header bg-info"><i class="fa fa-1x fa-fw fa-gamepad"></i> GTA</h4>
-        <div class="card-body">
-            <h5>
-                <a href="/gta_tools/business_timers/bussiness.html">
-                    <i class="fa fa-1x fa-fw fa-clock-o"></i> Business Timers
-                </a>
-            </h5>
-            <p>Handles real-world timers for different GTA Motorcycle Club Businesses.</p>
+    <main class="py-4">
+        <div class="container-fluid">
+            <div class="card border-info mt-4">
+                <h4 class="card-header bg-info">Business Timers</h4>
+                <div class="card-body">
+                    <fieldset>
+                        <legend>Select Businesses</legend>
+                        <div class="form-group">
+                          <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="gunrunning">
+                            <label class="custom-control-label" for="gunrunning">Gunrunning Supplies</label>
+                            <div class="custom-control custom-checkbox hide">
+                                <input type="checkbox" class="custom-control-input" id="gunStaffUpgrade" onclick="show();">
+                                <label class="custom-control-label" for="gunStaffUpgrade">Staff Upgrade</label>
+                            </div>
+                            <div class="custom-control custom-checkbox hide">
+                                <input type="checkbox" class="custom-control-input" id="gunEquipUpgrade" onclick="show();">
+                                <label class="custom-control-label" for="gunEquipUpgrade">Equipment Upgrade</label>
+                            </div>
+                          </div>
+                          <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="cocaine">
+                            <label class="custom-control-label" for="cocaine">Cocaine Lockup</label>
+                          </div>
+                          <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="meth">
+                            <label class="custom-control-label" for="meth">Meth Lab</label>
+                          </div>
+                          <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="weed">
+                            <label class="custom-control-label" for="weed">Weed Farm</label>
+                          </div>
+                          <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="counterfeit">
+                            <label class="custom-control-label" for="counterfeit">Counterfeit Cash</label>
+                          </div>
+                          <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="documents">
+                            <label class="custom-control-label" for="documents">Document Forgery</label>
+                          </div>
+                        </div>
+                      </fieldset>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
-
-<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-    <div class="card border-primary">
-        <h4 class="card-header bg-primary"><i class="fa fa-1x fa-fw fa-circle-o"></i> Pokemon</h4>
-        <div class="card-body">
-            <h5>
-                <a href="#">
-                    <i class="fa fa-1x fa-fw fa-random"></i> Challenge Randomizer
-                </a>
-            </h5>
-            <p>Selects a random challenge for you to do complete on your choice of game. Lots of functionality for different challenges/play styles.</p>
-
-           <!-- <hr> -->
-        </div>
-    </div>
-</div>
-
-<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-    <div class="card border-secondary">
-        <h4 class="card-header bg-secondary"><i class="fa fa-1x fa-fw fa-pencil-square-o"></i> Contact information:</h4>
-        <div class="card-body">
-            <p>Want to get in touch?</p>
-<p>Please contact me using any of the following methods:</p>
-
-<div class="list-group">
-<a href="mailto:olayon.javier@gmail.com" class="list-group-item">
-<i class="fa fa-1x fa-fw fa-envelope"></i> E-mail (olayon.javier@gmail.com)
-</a>
-
-<a href="https://twitter.com/OlayonJavier" class="list-group-item" target="_blank">
-<i class="fa fa-1x fa-fw fa-twitter"></i> Twitter (@OlayonJavier)
-</a>
-
-</div>
-        </div>
-    </div>
-</div>
-</div>
-    </div>
-</main>
+    </main>
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
